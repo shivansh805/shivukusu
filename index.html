@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>I'm Sorry Khushi 😔</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <style>
+    .slap-container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 40px auto;
+}
+
+/* Image styles */
+.slapper, .slappee {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Khushi slaps */
+.slapper {
+  left: 0;
+  z-index: 2;
+  animation: slap-hand 2s infinite;
+}
+
+/* You get slapped */
+.slappee {
+  right: 0;
+  z-index: 1;
+  animation: get-slapped 2s infinite;
+}
+.boom {
+  position: absolute;
+  top: 50%;
+  left: 220px;
+  font-size: 2em;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: boom-pop 2s infinite;
+}
+
+
+/* Hand emoji slap effect */
+.slap-effect {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  opacity: 0;
+  animation: show-hand 2s infinite;
+}
+
+/* Khushi's hand slaps */
+@keyframes slap-hand {
+  0%, 60%, 100% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  30% {
+    transform: translateY(-50%) rotate(20deg);
+  }
+}
+
+/* You get slapped sideways */
+@keyframes get-slapped {
+  0%, 60%, 100% {
+    transform: translateY(-50%) translateX(0);
+  }
+  30% {
+    transform: translateY(-50%) translateX(25px);
+  }
+}
+
+/* Hand emoji appears briefly */
+@keyframes show-hand {
+  0%, 100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  30% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  40% {
+    opacity: 0;
+  }
+}
+@keyframes boom-pop {
+  0%, 29%, 60%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+  30% { opacity: 1; transform: translate(-50%, -50%) scale(1.5); }
+  40% { opacity: 0; }
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+
+
+
+
+    body {
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      font-family: 'Quicksand', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+
+    .emoji {
+      font-size: 4em;
+      animation: bounce 2s infinite;
+    }
+
+    .heart {
+      width: 100px;
+      margin: 20px auto;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .message {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+      max-width: 500px;
+    }
+
+    .cert {
+      margin-top: 30px;
+      font-size: 1.2em;
+      background: #ffe5e5;
+      padding: 10px;
+      border-radius: 10px;
+      display: inline-block;
+      border: 2px dashed red;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 15px 25px;
+      font-size: 1em;
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff3b3b;
+    }
+  </style>
+</head>
+<body>
+  <script>
+  function revealImage() {
+    const imgDiv = document.getElementById("hiddenImage");
+    const img = document.getElementById("shakyImg");
+
+    imgDiv.style.display = "block";
+
+    // Add shake class temporarily
+    img.style.animation = "shake 2s ease-in-out";
+
+    // Remove it after animation completes to reset
+    setTimeout(() => {
+      img.style.animation = "";
+    }, 400);
+  }
+</script>
+
+
+
+  <div class="emoji">😢</div>
+  <h1>I'm Sorry, Khushi</h1>
+<div class="slap-container">
+  <img src="https://i.postimg.cc/1tkwcmsm/khushu.jpg" alt="Khushi" class="slapper">
+  <div class="slap-effect">✋</div> 
+  <div class="boom">💥</div>
+  <img src="https://i.postimg.cc/gj3RgC2v/shivu.jpg" alt="Me (oops)" class="slappee">
+</div>
+
+
+  <img src="https://media.giphy.com/media/j2pOGeGYKe2xCCKwfi/giphy.gif" alt="Sad Heart" class="heart"/>
+
+  <div class="message">
+    <p>Dear Khushi,</p>
+    <p>I messed up. Like, big time. I said things I shouldn't have, and I'm really sorry for hurting you.</p>
+    <p>I know you're older, wiser, and infinitely cooler than me (and probably considering blocking me 😬), but I hope you’ll forgive this foolish friend.</p>
+    <p>This silly site is just my way of saying I regret it — and I miss your smile (and your awesome YouTube videos 🎬).</p>
+  </div>
+
+  <div class="cert">
+    🏅 Certified "besharmo ki tarah behes krna" Award Recipient 🏅
+  </div>
+
+  <button onclick="alert('Sending hugs 🫂... Hopefully received!')">Forgive Me?</button>
+  <button onclick="revealImage()" style="background-color:#ff4c4c;">Don't Tap, You're Gonna Get Mad 😡</button>
+
+<div id="hiddenImage" style="display:none; margin-top:20px;">
+  <img src="https://i.postimg.cc/cHgfngqk/chap.jpg" alt="chap" 
+  alt="Oops!" 
+     id="shakyImg"
+     style="max-width: 50%; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+      <div id="laughText" style="font-size: 1.5em; display: flex; flex-direction: column; align-items: center;">
+      <span style="font-weight: bold;">Chapri 😂</span>
+      <div style="font-size: 2em;">🤣🤣🤣🤣</div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
