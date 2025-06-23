@@ -6,6 +6,71 @@
   <title>I'm Sorry Khushi 😔</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
   <style>
+    /* Dropdown base */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffe2e2;
+}
+
+/* Show the dropdown when hovering */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+    .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffb347;
+  padding: 15px 30px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+}
+
+.nav-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff3b3b;
+}
+
     .slap-container {
   position: relative;
   width: 300px;
@@ -184,6 +249,47 @@
   </style>
 </head>
 <body>
+  <header class="navbar">
+  <div class="nav-title">Shivukusu</div>
+  <nav class="nav-links">
+  <div class="dropdown">
+    <a href="#">Proof I'm Sorry 😔	</a>
+    <div class="dropdown-content">
+      <a href="#proof">I'm Not</a>
+      <a href="#extra1">Actually i am...:(</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#">Khushi Moments 🎥	</a>
+    <div class="dropdown-content">
+      <a href="#moments">Khud pe moli karna</a>
+      <a href="#extra2">teammate pe moli krna</a>      
+      <a href="#extra2">khud pe nade krna</a>      
+      <a href="#extra2">teammate pe nade krna</a>      
+      <a href="#extra2">poori team kaa 1v4 krvana</a>
+      <a href="#extra2">teammate ko blame krvana</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#">Reasons You Should Forgive Me 📝	</a>
+    <div class="dropdown-content">
+      <a href="#reasons">Forgive Me</a>
+      <a href="yaya">kisi ko dukh me rakh ke kaise alvida karu</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#">One Last Surprise 🎁	</a>
+    <div class="dropdown-content">
+      <a href="https://youtube.com/shorts/3E7g7wfTnCE?si=fU_9p6EjfjjDWHlL">TAP</a>
+    </div>
+  </div>
+</nav>
+
+</header>
+
   <script>
   function revealImage() {
     const imgDiv = document.getElementById("hiddenImage");
@@ -217,9 +323,9 @@
 
   <div class="message">
     <p>Dear Khushi,</p>
-    <p>I messed up.  I said things I shouldn't have, and I'm really sorry for hurting you.</p>
-    <p>I know you're older(probably 30), wiser(not much or thass), and infinitely cooler than me (and probably considering blocking me 😬), but I hope you’ll forgive this foolish friend.</p>
-    <p>This silly site is just my way of saying I regret it — and I miss your smile (and your awesome YouTube videos(maybe) 🎬).</p>
+    <p>I messed up. I said things I shouldn't have, and I'm really sorry for hurting you.</p>
+    <p>I know you're older(35), wiser, and infinitely cooler than me (and probably considering blocking me 😬), but I hope you’ll forgive this foolish friend.</p>
+    <p>This silly site is just my way of saying I regret it — and I miss your smile (and your awesome YouTube videos(((maybe))) 🎬).</p>
   </div>
 
   <div class="cert">
@@ -227,7 +333,7 @@
   </div>
 
   <button onclick="alert('Sending hugs 🫂... Hopefully received!')">Forgive Me?</button>
-  <button onclick="revealImage()" style="background-color:#ff4c4c;">Don't Tap, You're Gonna Get Mad </button>
+  <button onclick="revealImage()" style="background-color:#ed5436;">Don't Tap, You're Gonna Get Mad </button>
 
 <div id="hiddenImage" style="display:none; margin-top:20px;">
   <img src="https://i.postimg.cc/cHgfngqk/chap.jpg" alt="chap" 
@@ -235,12 +341,25 @@
      id="shakyImg"
      style="max-width: 50%; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
       <div id="laughText" style="font-size: 1.5em; display: flex; flex-direction: column; align-items: center;">
-      <span style="font-weight: bold;">Chapri 😂</span>
+      <span style="font-weight: bold;">Chapri😂</span>
       <div style="font-size: 2em;">🤣🤣🤣🤣</div>
     </div>
   </div>
 </div>
 
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>Made with ❤️, regret 😔, and a tiny bit of JavaScript by Shivansh</p>
+    <p>Dedicated to Khushi — the coolest YouTuber and the one I hope forgives me 🧡</p>
+    <p>
+      Connect: 
+      <a href="https://www.youtube.com/@Khushuplays" target="_blank">YouTube</a> |
+      <a href="https://instagram.com/khushisehrawat10" target="_blank">Instagram</a> |
+      <a href="mailto:sehgalshivansh06@email.com">Email Me</a>
+    </p>
+    <p class="copyright">© 2025 Shivukusu. All rights respected (even the slaps 🫠).</p>
+  </div>
+</footer>
 
 </body>
 </html>
